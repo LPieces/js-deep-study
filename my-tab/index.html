@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #my-tab {
+            width: 500px;
+            border: 1px solid blue;
+            margin: 50px 0 0 50px;
+        }
+
+        #my-tab .tab-wrapper {
+            border-bottom: 1px solid blue;
+        }
+
+        #my-tab .tab-wrapper::after {
+            content: "";
+            display: block;
+            clear: both;
+            width: 0;
+            height: 0;
+        }
+
+        #my-tab .tab-wrapper .tab-item {
+            float: left;
+            width: 33.33%;
+            text-align: center;
+            padding: 10px 0;
+            cursor: pointer;
+        }
+
+        #my-tab .tab-wrapper .tab-item.current {
+            background-color: blue;
+            color: #fff;
+        }
+
+        #my-tab .page-wrapper {
+            position: relative;
+            height: 400px;
+            line-height: 400px;
+        }
+
+        #my-tab .page-wrapper .page-item {
+            position: absolute;
+            left: 0;
+            top: 0;
+            text-align: center;
+            width: 100%;
+            display: none;
+        }
+
+        #my-tab .page-wrapper .page-item.current {
+            display: block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="my-tab" data='[
+        { "tab": "选项1" , "page" : "页面1" }, 
+        { "tab" : "选项2" , "page" : "页面2" }, 
+        { "tab" : "选项3" , "page" : "页面3" }
+    ]'></div>
+    <script src="./tpl.js"></script>
+    <script src="./utils.js"></script>
+    <script src="./myTab.js"></script>
+    <script type="text/javascript">
+        new MyTab("my-tab");
+    </script>
+</body>
+
+</html>
