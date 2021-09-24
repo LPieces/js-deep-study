@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>手写正则 - 复习</title>
+</head>
+<body>
+    
+</body>
+<script type="text/javascript">
+    // 手机号
+    // var reg = /^1[3456789][0-9]{9}$/;
+    // var ru = reg.test("14545687485");
+
+    // 邮箱
+    //var reg = /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/;
+    //var ru = reg.test("ljh_pieces@163.com");
+    // qq
+    // var reg = /^[1-9]\d{4,9}$/;
+    // var ru = reg.test("676319202");
+
+    // 删除所有空格
+    var reg = /\s+/g;
+    // 删除两边空格
+    // var reg = /^\s+|\s+$/g;
+    var str = " 123123 123123 12312 312 312 ";
+    var ru = str.replace(reg,'');
+    console.log("-"+ru+"-")
+</script>
+</html>
