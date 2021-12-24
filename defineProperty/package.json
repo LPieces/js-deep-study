@@ -1,0 +1,16 @@
+{
+  "dependencies": {
+    "vite": "^2.7.6"
+  },
+  "name": "defineproperty",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "vite": "vite"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
