@@ -9,7 +9,6 @@ function bubbleSort (arr) {
             if(prev > next){
                 arr[j] = next;
                 arr[j+1] = prev;
-                isOk = false;
             }
         }
     }
