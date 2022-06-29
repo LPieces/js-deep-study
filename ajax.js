@@ -48,23 +48,23 @@ function ajax (obj) {
     })
 }
 
-ajax({
-    method: 'get',
-    url: 'https://pultap3.eotor.net/statement/types',
-    headers:{
-        TOKEN: 'eyJhbGciOiJIUzI1NiJ9.eyJsYW5ndWFnZSI6InpoX0NOIiwiaWQiOjYyLCJzdGF0ZSI6IjEiLCJleHAiOjE2MzQ1MDYxMzF9.wDwU_P-LBF2Y7JJmVe0cWOEElDYxfA9DbUYflR1d9ew' 
-    },
-    params: {
-        storeId: 18,
-        startDate: '2021-10-14 00:00:00',
-        endDate: '2021-10-14 23:59:59',
-        typeId: ''
-    }
-}).then(({data: res})=>{
-    console.log(res);
-}).catch(err=>{
-    console.log(err);
-})
+// ajax({
+//     method: 'get',
+//     url: 'https://pultap3.eotor.net/statement/types',
+//     headers:{
+//         TOKEN: 'eyJhbGciOiJIUzI1NiJ9.eyJsYW5ndWFnZSI6InpoX0NOIiwiaWQiOjYyLCJzdGF0ZSI6IjEiLCJleHAiOjE2MzQ1MDYxMzF9.wDwU_P-LBF2Y7JJmVe0cWOEElDYxfA9DbUYflR1d9ew' 
+//     },
+//     params: {
+//         storeId: 18,
+//         startDate: '2021-10-14 00:00:00',
+//         endDate: '2021-10-14 23:59:59',
+//         typeId: ''
+//     }
+// }).then(({data: res})=>{
+//     console.log(res);
+// }).catch(err=>{
+//     console.log(err);
+// })
 
 // getList();
 // async function getList () {

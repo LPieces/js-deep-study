@@ -1,16 +1,16 @@
-var obj = {
-  name: 'LPieces',
-  age: 22,
-  info: {
-    hobby: ['piano'],
-    a: 1,
-    career: {
-      teacher: 4,
-      engineer: 9
-    }
-  },
-  arr: ['one', 'two']
-}
+// var obj = {
+//   name: 'LPieces',
+//   age: 22,
+//   info: {
+//     hobby: ['piano'],
+//     a: 1,
+//     career: {
+//       teacher: 4,
+//       engineer: 9
+//     }
+//   },
+//   arr: ['one', 'two']
+// }
 
 // function deepClone (origin, target) {
 //   var toStr = Object.prototype.toString;
